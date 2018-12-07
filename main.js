@@ -7,9 +7,6 @@ function doGet(e) {
   if (e.parameter.spreadsheetId != undefined)
     config["spreadsheetId"] = e.parameter.spreadsheetId
   
-//  config["searchVisName"] = "SlackChannels"
-//  config["dossierUrl"] = "https://env-112094.customer.cloud.microstrategy.com/MicroStrategyLibrary/app/67F2246E11E8CE0096D80080EF0541CB/C88A29A611E8F6837B7D0080EFD5FCDB"
-  
   var regex = /(.*)\/app\/(\w*)\/(\w*)/
   config["webserver"] = config["dossierUrl"].match(regex)[1]
   config["projectID"] = config["dossierUrl"].match(regex)[2]
