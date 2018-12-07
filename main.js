@@ -177,7 +177,7 @@ function extractDataSet(visDetailedData) {
   for(var i = 0; i < data.length; i++) {
     data[i] = Array(2)
     data[i][0] = visData[i]["element"]["name"]
-    data[i][1] = visData[i]["metrics"]["Messages"]["fv"]
+    data[i][1] = visData[i]["metrics"][metrics[0]]["fv"]
   }
 
   Logger.log(attributes)
